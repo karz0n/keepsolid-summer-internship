@@ -25,7 +25,8 @@ int Pyramid::getWithRecursion(unsigned int i, unsigned int j)
 	return getWithRecursion(i - 1, j - 1) + getWithRecursion(i - 1, j);
 }
 
-int Pyramid::getWithoutRecursion(unsigned int i, unsigned int j) {
+int Pyramid::getWithoutRecursion(unsigned int i, unsigned int j)
+{
 	if (i > MAX_INDEX_VALUE || j > MAX_INDEX_VALUE)
 		throw new std::invalid_argument("Index value too large");
 
@@ -47,7 +48,8 @@ int Pyramid::getWithoutRecursion(unsigned int i, unsigned int j) {
 	return values[i][j];
 }
 
-int Pyramid::getWithLessMemory(unsigned int i, unsigned int j) {
+int Pyramid::getWithLessMemory(unsigned int i, unsigned int j)
+{
 	if (i > MAX_INDEX_VALUE || j > MAX_INDEX_VALUE)
 		throw new std::invalid_argument("Index value too large");
 
